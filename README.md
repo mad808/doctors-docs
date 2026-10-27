@@ -1,58 +1,248 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+ 🩺 ProDoctors — Medical Portal & Doctor Appointment Platform
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://img.shields.io/badge/Laravel-11%2B%20%2F%2012%2B-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+  <img src="https://img.shields.io/badge/PHP-8.4%2B-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
 </p>
 
-## About Laravel
+**ProDoctors** is a comprehensive healthcare platform connecting patients, verified medical specialists, and clinics. Inspired by portals like *ProDoctorov*, it empowers patients to find verified doctors, book appointments, read authenticated patient reviews, and access medical consultation tools.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🌟 Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👤 1. Patients & Public Portal
+- **Smart Search & Filters:** Filter doctors by specialty (Cardiologist, Neurologist, Pediatrician, etc.), clinic, experience, price, rating, and district/city.
+- **Doctor Profiles:** Detailed biographies, certifications, clinical experience, clinic affiliations, working hours, and real patient feedback.
+- **Digital QR Visit Card:** Each doctor has an automatic, high-resolution QR card to easily scan, share, and save contacts on mobile devices.
+- **Appointment Booking:** Online scheduling with calendar slot availability.
+- **Patient Reviews & Ratings:** Transparent, 5-star rating system with verified feedback moderation.
+- **Direct Messaging / Inquiries:** Secure communication channel with specialists.
+- **Multi-language Support:** Full localization in Turkmen (`tk`), Russian (`ru`), and English (`en`).
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 🩺 2. Doctor Portal (`/doctor/portal`)
+- **Doctor Dashboard:** Overview of total appointments, profile views, patient reviews, and rating analytics.
+- **Profile Customization:**
+  - Biography and title across multiple languages.
+  - Medical degree and academic status (Candidate of Medical Sciences, Professor, etc.).
+  - Associated clinics and departments.
+  - List of treated illnesses and medical services.
+- **Schedule & Availability:** Configure work shifts, consultation duration, and days off across multiple clinics.
+- **Patient Appointments:** Accept, reschedule, or cancel patient bookings with instant status updates.
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 🏥 3. Clinics Directory (`/clinics`)
+- **Clinic Profiles:** Public profiles displaying medical departments, affiliated doctors, photo galleries, working hours, and physical addresses.
+- **Multi-Branch Support:** Manage multiple clinics or private medical centers.
+- **Staff Directory:** Direct access to all verified specialists practicing at the facility.
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+### 🛡️ 4. Administration & Moderation Panel (`/admin`)
+- **Doctor Verification:** Review diplomas, medical licenses, and credentials before awarding the verified badge (`is_verified`).
+- **Review Moderation:** Anti-spam review moderation system to prevent fraudulent or competitor ratings.
+- **Clinic & Specialty Management:** Dynamic taxonomy management for medical specialties, clinics, and departments.
 
-```bash
-composer require laravel/boost --dev
+---
 
-php artisan boost:install
-```
+### 🔐 5. Authentication & Security
+- **Passwordless OTP Login:** Phone number authentication via SMS OTP (with a developer master code for staging/testing).
+- **Role-Based Access Control (RBAC):** Distinct roles for `patient`, `doctor`, and `admin`.
+- **Session & CSRF Protection:** Secure session cookies and strict route middleware protection.
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 🛠️ Tech Stack
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+| Layer | Technology |
+| :--- | :--- |
+| **Backend Framework** | [Laravel](https://laravel.com/) (PHP 8.4+) |
+| **Frontend Engine** | Blade Templates, Alpine.js / Vanilla JS |
+| **CSS Framework** | Bootstrap 5.3 + Bootstrap Icons (`bi bi-*`) |
+| **Database** | PostgreSQL (or MySQL 8.0+) |
+| **File Storage** | Laravel Storage (Local / Public symlink / S3) |
+| **Caching / Session** | Redis / Database / File Cache |
+| **QR Code Engine** | Dynamic SVG/PNG QR Code Generator API |
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🗄️ Database Schema Overview
 
-## Security Vulnerabilities
+erDiagram
+    USERS ||--o| DOCTOR_PROFILES : has
+    DOCTOR_PROFILES ||--o{ APPOINTMENTS : receives
+    USERS ||--o{ APPOINTMENTS : books
+    CLINICS ||--o{ DOCTOR_PROFILES : employs
+    SPECIALTIES ||--o{ DOCTOR_PROFILES : categorizes
+    DOCTOR_PROFILES ||--o{ REVIEWS : receives
+    USERS ||--o{ REVIEWS : writes
+    USERS ||--o{ OTP_CODES : verifies
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    USERS {
+        bigint id PK
+        string name
+        string phone UK
+        timestamp phone_verified_at
+        enum role "patient, doctor, admin"
+        string avatar
+        tinyint status
+    }
 
-## License
+    DOCTOR_PROFILES {
+        bigint id PK
+        bigint user_id FK
+        bigint clinic_id FK
+        bigint specialty_id FK
+        string title_tk
+        string title_ru
+        string title_en
+        string degree_tk
+        int experience_years
+        decimal rating
+        int reviews_count
+        boolean is_verified
+        text bio_tk
+    }
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    CLINICS {
+        bigint id PK
+        string name_tk
+        string name_ru
+        string address
+        string phone
+        string logo
+    }
+
+    APPOINTMENTS {
+        bigint id PK
+        bigint doctor_profile_id FK
+        bigint user_id FK
+        date appointment_date
+        time appointment_time
+        enum status "pending, confirmed, completed, cancelled"
+    }
+
+    REVIEWS {
+        bigint id PK
+        bigint doctor_profile_id FK
+        bigint user_id FK
+        int rating
+        text comment
+        boolean is_approved
+    }
+
+
+🚀 Quick Start & Installation
+
+Prerequisites
+
+PHP: ^8.2 or ^8.4 (with pdo_pgsql, mbstring, gd, curl, xml extensions)
+Composer: ^2.5
+PostgreSQL / MySQL
+Nginx (or Apache)
+
+
+1. Clone the Repository
+
+git clone https://github.com/your-username/prodoctors.git
+cd prodoctors
+
+2. Install PHP Dependencies
+
+composer install --optimize-autoloader --no-dev
+
+3. Environment Configuration
+
+cp .env.example .env
+php artisan key:generate
+Open .env and set your database and application details:
+
+Env
+APP_NAME=ProDoctors
+APP_ENV=local
+APP_DEBUG=true
+APP_URL=http://127.0.0.1:8000
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=prodoctors_db
+DB_USERNAME=your_db_user
+DB_PASSWORD=your_db_password
+
+# Cache Driver (Use file for quick setup or redis for production)
+CACHE_STORE=file
+SESSION_DRIVER=file
+QUEUE_CONNECTION=sync
+4. Database Migration & Seeders
+code
+Bash
+# Run migrations and seed initial specialties & clinics
+php artisan migrate --seed
+5. Create Public Storage Link
+code
+Bash
+php artisan storage:link
+6. Set Proper File Permissions
+code
+Bash
+sudo chown -R www-data:www-data storage bootstrap/cache
+sudo chmod -R 775 storage bootstrap/cache
+7. Run Local Development Server
+code
+Bash
+php artisan serve --port=8000
+Open http://127.0.0.1:8000 in your browser.
+
+
+
+🔑 Authentication & Testing
+
+The platform uses an SMS OTP system. Until an active SMS Gateway API is connected, the application uses a Master Bypass Code for development and staging:
+
+Field	Development Value
+Phone Format	+9936XXXXXXX or 6XXXXXXX
+Master OTP Code	240774
+Test Admin	Pre-seeded with role admin
+Test Doctor	Pre-seeded with role doctor
+
+📂 Project Structure
+
+prodoctors/
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Front/              # Public controllers (Home, Doctor, Clinic, Review)
+│   │   │   ├── DoctorPortal/       # Doctor dashboard, appointments, schedules
+│   │   │   └── Admin/              # Admin moderation & verifications
+│   │   └── Middleware/             # Role, Auth, and Localization middleware
+│   └── Models/                     # User, DoctorProfile, Clinic, Appointment, etc.
+├── database/
+│   ├── migrations/                 # Database schema definitions
+│   └── seeders/                    # Sample doctors, clinics, and specialties
+├── resources/
+│   └── views/
+│       ├── front/                  # Public pages (doctor profiles, clinic catalog)
+│       ├── doctor_portal/          # Doctor self-service dashboard
+│       └── layouts/                # Base layout & UI components
+├── routes/
+│   ├── web.php                     # Web and portal routes
+│   └── auth.php                    # OTP auth routes
+└── storage/                        # Uploaded avatars, licenses, and documents
+
+
+🗺️ Roadmap & Upcoming Features
+
+Telemedicine Consultations: Integrated WebRTC video appointments.
+
+E-Prescriptions & Document Sharing: Secure medical file exchange between doctor and patient.
+
+SMS Gateway Integration: Automatic OTP codes and appointment SMS reminders.
+
+Interactive Clinic Maps: Mapbox/OpenStreetMap integration for clinic branch locators.

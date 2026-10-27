@@ -1,4 +1,4 @@
- 🩺 ProDoctors — Medical Portal & Doctor Appointment Platform
+# 🩺 ProDoctors — Medical Portal & Doctor Appointment Platform
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-11%2B%20%2F%2012%2B-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
@@ -181,22 +181,24 @@ CACHE_STORE=file
 SESSION_DRIVER=file
 QUEUE_CONNECTION=sync
 4. Database Migration & Seeders
-code
-Bash
+
 # Run migrations and seed initial specialties & clinics
 php artisan migrate --seed
+
+
 5. Create Public Storage Link
-code
-Bash
+
 php artisan storage:link
+
+
 6. Set Proper File Permissions
-code
-Bash
+
 sudo chown -R www-data:www-data storage bootstrap/cache
 sudo chmod -R 775 storage bootstrap/cache
+
+
 7. Run Local Development Server
-code
-Bash
+
 php artisan serve --port=8000
 Open http://127.0.0.1:8000 in your browser.
 

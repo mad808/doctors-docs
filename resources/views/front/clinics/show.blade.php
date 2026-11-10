@@ -103,7 +103,7 @@
         <div class="col-lg-4">
             <div class="card shadow-sm border-0 sticky-top" style="top: 80px;">
                 <div class="card-body p-4">
-                    <h6 class="fw-bold mb-3 border-bottom pb-2">{{ __('Contact') }}</h6>
+                    <h6 class="fw-bold mb-3 border-bottom pb-2">{{ __('Support & Info') }}</h6>
                     <ul class="list-unstyled small mb-0 d-flex flex-column gap-3 text-secondary">
                         @if($clinic->phone_1)
                             <li class="d-flex align-items-center gap-2">

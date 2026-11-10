@@ -128,9 +128,9 @@
                             </form>
                         @endif
                     @else
-                        <div class="text-center p-3 bg-light rounded">
+                        <!-- <div class="text-center p-3 bg-light rounded">
                             <a href="{{ route('login') }}" class="btn btn-sm btn-outline-primary">{{ __('Login to Leave a Review') }}</a>
-                        </div>
+                        </div> -->
                     @endauth
                 </div>
             </div>
@@ -191,7 +191,7 @@
                         @endif
                     @else
                         <div class="text-center py-4">
-                            <p class="text-muted small mb-3">{{ __('Please login to choose a date and confirm your appointment.') }}</p>
+                            <p class="text-muted small mb-3">{{ __('Login to Book') }}</p>
                             <a href="{{ route('login') }}" class="btn btn-primary w-100 py-2 fw-semibold">
                                 {{ __('Login to Book') }}
                             </a>

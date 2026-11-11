@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status" />
 </p>
 
-**ProDoctors** is a comprehensive healthcare platform connecting patients, verified medical specialists, and clinics. Inspired by portals like *ProDoctorov*, it empowers patients to find verified doctors, book appointments, read authenticated patient reviews, and access medical consultation tools.
+**ProDoctors** is a comprehensive healthcare platform connecting patients, verified medical specialists, and clinics. Inspired by portals like *ProDoctorov*, it empowers patients to find verified doctors, book appointments, read authenticated patient reviews, and access medical consultation tools...
 
 ---
 

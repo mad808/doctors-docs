@@ -145,6 +145,7 @@ Prerequisites
 PHP: ^8.2 or ^8.4 (with pdo_pgsql, mbstring, gd, curl, xml extensions)
 
 Composer: ^2.5
+
 PostgreSQL / MySQL
 Nginx (or Apache)
 

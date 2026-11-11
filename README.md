@@ -246,7 +246,7 @@ prodoctors/
 └── storage/                        # Uploaded avatars, licenses, and documents
 
 
-🗺️ Roadmap & Upcoming Features
+Roadmap & Upcoming Features
 
 Telemedicine Consultations: Integrated WebRTC video appointments.
 

@@ -1,4 +1,4 @@
-# 🩺 ProDoctors — Medical Portal & Doctor Appointment Platform
+# ProDoctors — Medical Portal & Doctor Appointment Platform
 
 <p align="center">
   <img src="https://img.shields.io/badge/Laravel-11%2B%20%2F%2012%2B-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />

@@ -210,7 +210,7 @@ Open http://127.0.0.1:8000 in your browser.
 
 
 
-🔑 Authentication & Testing
+Authentication & Testing
 
 The platform uses an SMS OTP system. Until an active SMS Gateway API is connected, the application uses a Master Bypass Code for development and staging:
 

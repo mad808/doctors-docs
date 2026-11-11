@@ -138,7 +138,7 @@ erDiagram
     }
 
 
-🚀 Quick Start & Installation
+Quick Start & Installation
 
 Prerequisites
 

@@ -151,6 +151,7 @@ Nginx (or Apache)
 1. Clone the Repository
 
 git clone https://github.com/your-username/prodoctors.git
+
 cd prodoctors
 
 2. Install PHP Dependencies

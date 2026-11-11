@@ -12,7 +12,7 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
 ### 👤 1. Patients & Public Portal
 - **Smart Search & Filters:** Filter doctors by specialty (Cardiologist, Neurologist, Pediatrician, etc.), clinic, experience, price, rating, and district/city.

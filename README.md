@@ -51,7 +51,7 @@
 
 ---
 
-### 🔐 5. Authentication & Security
+### 5. Authentication & Security
 - **Passwordless OTP Login:** Phone number authentication via SMS OTP (with a developer master code for staging/testing).
 - **Role-Based Access Control (RBAC):** Distinct roles for `patient`, `doctor`, and `admin`.
 - **Session & CSRF Protection:** Secure session cookies and strict route middleware protection.

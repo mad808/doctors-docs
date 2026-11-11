@@ -180,6 +180,7 @@ DB_PASSWORD=your_db_password
 CACHE_STORE=file
 SESSION_DRIVER=file
 QUEUE_CONNECTION=sync
+
 4. Database Migration & Seeders
 
 # Run migrations and seed initial specialties & clinics

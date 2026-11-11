@@ -37,7 +37,7 @@
 
 ---
 
-### 🏥 3. Clinics Directory (`/clinics`)
+### 3. Clinics Directory (`/clinics`)
 - **Clinic Profiles:** Public profiles displaying medical departments, affiliated doctors, photo galleries, working hours, and physical addresses.
 - **Multi-Branch Support:** Manage multiple clinics or private medical centers.
 - **Staff Directory:** Direct access to all verified specialists practicing at the facility.

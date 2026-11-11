@@ -72,7 +72,7 @@
 
 ---
 
-## 🗄️ Database Schema Overview
+## Database Schema Overview
 
 erDiagram
     USERS ||--o| DOCTOR_PROFILES : has

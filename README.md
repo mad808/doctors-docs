@@ -209,6 +209,7 @@ Open http://127.0.0.1:8000 in your browser.
 The platform uses an SMS OTP system. Until an active SMS Gateway API is connected, the application uses a Master Bypass Code for development and staging:
 
 Field	Development Value
+
 Phone Format	+9936XXXXXXX or 6XXXXXXX
 Master OTP Code	240774
 Test Admin	Pre-seeded with role admin

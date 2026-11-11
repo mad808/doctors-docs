@@ -164,6 +164,7 @@ php artisan key:generate
 Open .env and set your database and application details:
 
 Env
+
 APP_NAME=ProDoctors
 APP_ENV=local
 APP_DEBUG=true

@@ -25,7 +25,7 @@
 
 ---
 
-### 🩺 2. Doctor Portal (`/doctor/portal`)
+### 2. Doctor Portal (`/doctor/portal`)
 - **Doctor Dashboard:** Overview of total appointments, profile views, patient reviews, and rating analytics.
 - **Profile Customization:**
   - Biography and title across multiple languages.

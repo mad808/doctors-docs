@@ -44,7 +44,7 @@
 
 ---
 
-### 🛡️ 4. Administration & Moderation Panel (`/admin`)
+### 4. Administration & Moderation Panel (`/admin`)
 - **Doctor Verification:** Review diplomas, medical licenses, and credentials before awarding the verified badge (`is_verified`).
 - **Review Moderation:** Anti-spam review moderation system to prevent fraudulent or competitor ratings.
 - **Clinic & Specialty Management:** Dynamic taxonomy management for medical specialties, clinics, and departments.

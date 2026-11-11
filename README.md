@@ -221,7 +221,7 @@ Master OTP Code	240774
 Test Admin	Pre-seeded with role admin
 Test Doctor	Pre-seeded with role doctor
 
-📂 Project Structure
+Project Structure
 
 prodoctors/
 ├── app/

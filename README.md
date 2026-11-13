@@ -189,7 +189,7 @@ QUEUE_CONNECTION=sync
 4. Database Migration & Seeders
 
 # Run migrations and seed initial specialties & clinics
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 
 
 5. Create Public Storage Link

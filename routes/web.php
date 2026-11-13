@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
+
 Route::match(['get', 'post'], '/language/{locale}', function ($locale) {
     if (in_array($locale, ['en', 'tk', 'ru'])) {
         session()->put('locale', $locale);
@@ -16,6 +17,7 @@ Route::match(['get', 'post'], '/language/{locale}', function ($locale) {
     }
     return redirect()->back();
 })->name('locale.switch');
+
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
